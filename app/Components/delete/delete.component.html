@@ -1,0 +1,48 @@
+<!-- <ol class="list-group list-group-numbered">
+    <li   *ngFor="let u of students;  index as i" 
+    class="list-group-item"> {{u.firstName}}, {{u.lastName}},{{u.studentClass}},{{u.subject}},{{u.dob}}
+    <button type="button" (click)="deleteRow(u, i)" >Delete User</button>
+   
+  </li>
+  <button type="button" (click)="deleteRows(students)" >Delete Users</button>
+  </ol> -->
+
+  <div class="mt-5">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th style="background-color: rgb(247, 130, 231);">Student ID</th>
+          <th style="background-color: rgb(194, 105, 182);">FirstName</th>
+          <th style="background-color: rgb(194, 105, 182);">LastName</th>
+          <th style="background-color: rgb(194, 105, 182);">StudentClass</th>
+          <th style="background-color: rgb(194, 105, 182);">subject</th>
+          <th style="background-color: rgb(194, 105, 182);">Dob</th>
+          <th style="background-color: rgb(194, 105, 182);">Delete</th>
+       
+        
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        <tr *ngFor="let s of students; index as i">
+          <td>{{s.sId}}</td>
+          <td>{{s.firstName}}</td>
+          <td>{{s.lastName}}</td>
+          <td>{{s.studentClass}}</td>
+          <td>{{s.subject}}</td>
+          <td>{{s.dob}}</td>
+
+          <!-- <button type="button" (click)="deleteRow(s, i)" >Delete User</button> -->
+
+          <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
+
+<button (click)="deleteRow(s, i)">Delete User</button>
+<br>
+         
+          </tr>
+          <button type="button"  (click)="deleteRows(students)" >Delete Users</button>
+   
+      </tbody>
+    </table>
+  </div>
+

@@ -1,0 +1,93 @@
+
+ 
+   
+   
+    
+  
+  
+    
+
+<div class="container py-5 text-center tableclr">
+
+    <table class="table table-bordered table-striped {
+      background-color: burlywood;   }">
+
+      <thead>
+        <tr class="text-center text-uppercase">
+          <th>StudentId</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Student Class</th>
+          <th>Subject</th>
+          <th>Date Of Birth</th> 
+
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let s of students; let j=index">
+          <td>{{s.sId}}</td>
+          <td>{{s.firstName}}</td>
+          <td>{{s.lastName}}</td>
+          <td>{{s.studentClass}}</td>
+          <td>{{s.subject}}</td>
+          <td>{{s.dob}}</td>
+          <td><a class="btn btn-info"(click)="updateStudent(s,s.sId)">Edit</a></td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  
+
+<div class = "container">  
+
+  <form>
+  <h4>Add Student</h4>
+
+  <label for="username">FirstName</label>
+  <input
+      type="text"
+      class="form-control"
+      id="firstName"
+      required [(ngModel)]="student.firstName" name="firstName"/>
+
+      <label for="username">LastName</label>
+      <input
+          type="text"
+          class="form-control"
+          id="lastName"
+          required [(ngModel)]="student.lastName" name="lastName"/>
+
+          <label for="username">Student Class</label>
+          <input
+              type="text"
+              class="form-control"
+              id="studentClass"
+              required [(ngModel)]="student.studentClass" name="studentClass"/>
+          <label for="username">subject</label>
+              <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  required [(ngModel)]="student.subject" name="subject"/>
+              <label for="username">DOB</label>
+              <input
+                  type="date"
+                  class="form-control"
+                  id="dob"
+                  required [(ngModel)]="student.dob" name="dob"/>
+
+                  <button (click)="update(student)" class="btn btn-success">Save Changes</button>
+                 
+  
+</form>
+ 
+    
+  
+<!-- 
+      <button class="btn btn-primary" type="button" (click)="update(student)" >Update Student</button> -->
+   
+    </div>
+  

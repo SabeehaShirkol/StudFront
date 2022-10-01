@@ -1,0 +1,14 @@
+table{
+   
+    width: 1000px;
+    background-color: rgba(209, 74, 164, 0.603);
+    position: absolute;
+    transform: translate(-50%,-50%);
+
+    left: 50%;
+  
+    top: 80%;
+    border: 2px solid rgba(209, 49, 214, 0.712);
+    box-shadow: 0 0 40px rgba(87, 69, 84, 0.6);
+
+}

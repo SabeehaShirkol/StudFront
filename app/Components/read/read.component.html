@@ -1,0 +1,39 @@
+<!-- <ol class="list-group list-group-numbered">
+    <li   *ngFor="let u of students;  index as i" 
+    class="list-group-item"> {{u.firstName}}, {{u.lastName}},{{u.studentClass}},{{u.subject}},{{u.dob}}
+    
+    
+   
+  </li>
+ 
+  </ol> -->
+<br>
+  <div class="col-md-0 mt-20">
+            <table class="table table-bordered bordered-primary;" style="font-family: bold; text-align: center;">
+              <thead>
+                <tr>
+                  <th style="background-color: rgb(247, 130, 231);">Student ID</th>
+                  <th style="background-color: rgb(247, 130, 231);">FirstName</th>
+                  <th style="background-color: rgb(247, 130, 231);">LastName</th>
+                  <th style="background-color: rgb(247, 130, 231);">StudentClass</th>
+                  <th style="background-color: rgb(247, 130, 231);">subject</th>
+                  <th style="background-color: rgb(247, 130, 231);">Dob</th>
+               
+                
+                </tr>
+              </thead>
+              <tbody class="tbody" style="color: rgb(51, 43, 16); text-align: center; font-family: sans-serif">
+                <tr *ngFor="let s of students; index as i">
+                  <td>{{s.sId}}</td>
+                  <td>{{s.firstName}}</td>
+                  <td>{{s.lastName}}</td>
+                  <td>{{s.studentClass}}</td>
+                  <td>{{s.subject}}</td>
+                  <td>{{s.dob}}</td>
+
+                 
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div> 

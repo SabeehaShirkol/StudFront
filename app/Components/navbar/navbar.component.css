@@ -1,0 +1,9 @@
+.hm-gradient {
+  background-image: linear-gradient(to top, #d85189 0%, #7ca1da 99%, #e3eeff 100%);
+}
+.navbar .dropdown-menu a:hover {
+  color: #616161 !important;
+}
+.darken-grey-text {
+  color: #2E2E2E;
+}
